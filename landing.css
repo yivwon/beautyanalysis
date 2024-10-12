@@ -1,0 +1,31 @@
+.video-container {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;           
+}
+/*  video and canvas */
+video, canvas {
+    width: 320px;
+    height: 240px;
+    margin: 10px 0; 
+}
+
+button {
+    display: block;
+    margin: 0 auto; /* Centers  button */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
