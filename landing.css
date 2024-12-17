@@ -6,6 +6,17 @@
     align-items: center;     /* Horizontally center */
     height: 100vh;           /* Full screen height */
 }
+/* Style for video to mirror it horizontally */
+video {
+    width: 640px;
+    height: 480px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scaleX(-1); /* Mirrors the video horizontally */
+}
+
 /* Hide the canvas initially */
 canvas {
     display: none; /* Hide canvas by default */
