@@ -1,33 +1,44 @@
+/* Container to center everything */
 .video-container {
     display: flex;
-    flex-direction: column;  
-    justify-content: center; 
-    align-items: center;    
-    height: 100vh;           
-}
-/*  video and canvas */
-video, canvas {
-    width: 320px;
-    height: 240px;
-    margin: 10px 0; 
-       /*Mirror code starts*/
-       transform: rotateY(180deg);
-       -webkit-transform:rotateY(180deg); /* Safari and Chrome */
-       -moz-transform:rotateY(180deg); /* Firefox */
-       /*Mirror code ends*/
+    flex-direction: column;  /* Stack elements vertically */
+    justify-content: center; /* Vertically center */
+    align-items: center;     /* Horizontally center */
+    height: 100vh;           /* Full screen height */
 }
 
+/* Style for video and canvas */
+video, canvas {
+    width: 640px;   /* Increase width */
+    height: 480px;  /* Increase height */
+    margin: 10px 0; /* Space between video, button, and canvas */
+    border: 2px solid #ccc; /* Optional: Add a border for clarity */
+    border-radius: 8px;     /* Optional: Smooth edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Style for the button */
 button {
-    display: block;
-    margin: 0 auto; /* Centers  button */
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: General styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background color */
     text-align: center;
 }
 
